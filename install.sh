@@ -15,7 +15,7 @@ echo "installing vim-plug for ${_VIM}"
 sh -c "curl -fLo $_PLUG --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 
-mkdir -p $HOME/.config/nvim
+mkdir -p $HOME/.config/nvim/custom
 # mkdir -p $HOME/.vim/plug
 
 curl https://raw.githubusercontent.com/NayukiDS/ws-210T/main/init.vim > $HOME/.config/nvim/init.vim

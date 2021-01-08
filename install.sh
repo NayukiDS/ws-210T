@@ -10,7 +10,7 @@ if [ ! -f _PLUG ]; then
     _VIM=vim
 fi
 
-echo "installing vim-plug for ${_VIM}"
+echo "installing vim-plug for $_VIM"
 
 sh -c "curl -fLo $_PLUG --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
@@ -24,3 +24,5 @@ curl https://raw.githubusercontent.com/NayukiDS/ws-210T/main/init.vim > $HOME/.c
 _CUSTOM="$HOME/.config/nvim/custom"
 
 curl https://raw.githubusercontent.com/NayukiDS/ws-210T/main/custom/basic.vim > $_CUSTOM/basic.vim
+
+sh -c "$_VIM +PlugInstall +qall"

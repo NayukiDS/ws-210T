@@ -9,3 +9,16 @@ let base16colorspace=256
 for f in split(glob('~/.config/nvim/custom/*.vim'), '\n')
     exe 'source' f
 endfor
+
+call plug#begin('~/.config/nvim/plugged')
+
+" https://github.com/airblade/vim-gitgutter
+Plug 'airblade/vim-gitgutter'
+
+" https://github.com/itchyny/lightline.vim
+Plug 'itchyny/lightline.vim'
+
+" https://github.com/neoclide/coc.nvim
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+call plug#end()

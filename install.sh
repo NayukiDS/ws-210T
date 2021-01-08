@@ -5,7 +5,7 @@
 _PLUG="${XDG_DATA_HOME:-$HOME/.local/share}/nvim/site/autoload/plug.vim"
 _VIM=nvim
 
-if [ ! -f _PLUG ]; then
+if [ ! -f $_PLUG ]; then
     _PLUG="~/.vim/autoload/plug.vim"
     _VIM=vim
 fi

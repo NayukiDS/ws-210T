@@ -27,10 +27,11 @@ curl https://raw.githubusercontent.com/NayukiDS/ws-210T/main/init.vim > $HOME/.c
 _CUSTOM="$HOME/.config/nvim/custom"
 
 confs=(
-    "utils"
     "basic"
-    "cocConf"
-    "gitgutterConf"
+    "utils"
+    "plugconf_coc"
+    "plugconf_gitgutter"
+    "syn_typescript"
 )
 
 for conf in "${confs[@]}"; do
@@ -38,7 +39,7 @@ for conf in "${confs[@]}"; do
 done
 
 mkdir -p /root/repo
-git clone git@github.com:NayukiDS/ws-210T.git /root/repo
+git clone https://github.com/NayukiDS/ws-210T.git /root/repo
 
 # sh -c "$_VIM +PlugInstall +qall"
 sh -c "$_VIM -c 'PlugInstall | qall'"

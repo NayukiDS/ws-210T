@@ -1,0 +1,19 @@
+{
+  "name": "build_42",
+  "summary": "content from release note: build 42",
+  "buildVersion": 1,
+  "clientVersion": 1,
+  "clientMinVersion": 42,
+  "icon": {
+    "glyph": "cube.box.fill",
+    "color": "#FAC863"
+  },
+  "actions": [
+    {
+      "type": "@editor.smart-select",
+      "parameters": {
+        "matchMode": 2
+      }
+    }
+  ]
+}

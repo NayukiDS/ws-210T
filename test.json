@@ -12,7 +12,7 @@
     {
       "type": "@editor.smart-select",
       "parameters": {
-        "matchMode": 2
+        "mode": 2
       }
     }
   ]

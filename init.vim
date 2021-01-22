@@ -1,5 +1,6 @@
 set tabstop=4 shiftwidth=4 expandtab
 
+set updatetime=250
 set cursorline
 set background=dark
 
@@ -18,3 +19,4 @@ call plug#end()
 for f in split(glob('~/.config/nvim/custom/*.vim'), '\n')
     exe 'source' f
 endfor
+
